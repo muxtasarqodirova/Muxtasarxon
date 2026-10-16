@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Muxtasar Kadirova — Frontend & Backend Developer</title>
+<meta name="description" content="Muxtasar Kadirova — Frontend & Backend Developer portfolio">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="top">
+  <a href="#home" class="logo">muxtasar<b>.dev</b></a>
+  <nav id="nav">
+    <a href="#about" data-i18n="nav_about">Men haqimda</a>
+    <a href="#services" data-i18n="nav_services">Yo‘nalishlar</a>
+    <a href="#certificates" data-i18n="nav_certs">Sertifikatlar</a>
+    <a href="#contact" data-i18n="nav_contact">Aloqa</a>
+  </nav>
+  <div class="actions">
+    <button id="devToggle" class="chip" aria-pressed="false" title="Dasturlash rejimi">&lt;/&gt; Dev</button>
+    <div class="lang" role="group" aria-label="Til">
+      <button data-lang="uz" class="on">UZ</button><button data-lang="ru">RU</button><button data-lang="en">EN</button>
+    </div>
+    <button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Muxtasar<br>Kadirova</h1>
+      <div class="code" aria-label="Kod">
+        <span class="k">const</span> <span class="v">muxtasar</span> = {<br>
+        &nbsp;&nbsp;role: <span class="s">"<span id="typed"></span></span><span class="caret">|</span><span class="s">"</span>,<br>
+        &nbsp;&nbsp;city: <span class="s">"Guliston"</span>,<br>
+        &nbsp;&nbsp;open: <span class="k">true</span><br>};
+      </div>
+      <blockquote class="quote" data-i18n="hero_p"></blockquote>
+      <div class="btns">
+        <a class="btn dark" href="#certificates" data-i18n="btn_projects">Sertifikatlarim</a>
+        <a class="btn" href="#contact" data-i18n="btn_contact">Bog‘lanish</a>
+        <button class="btn" id="copyMail" data-i18n="btn_copy">Emailni nusxalash</button>
+      </div>
+      <dl class="stats">
+        <div><dt data-count="5">0</dt><dd data-i18n="st2">sertifikat</dd></div>
+        <div><dt data-count="5">0</dt><dd data-i18n="st3">yo‘nalish</dd></div>
+      </dl>
+    </div>
+    <div class="photo"><img src="assets/hero-person.jpg" alt="Muxtasar Kadirova"></div>
+  </div>
+</section>
+
+<section class="sec" id="about"><div class="wrap">
+  <h2 data-i18n="h_about">Men haqimda</h2>
+  <div class="two">
+    <div><p class="who"><b data-i18n="who_name">Ma’murjon qizi Kadirova Muxtasar</b><span data-i18n="who_loc">Sirdaryo viloyati, Guliston shahar</span></p><p class="lead" data-i18n="about_p">Men ijodkor, mas’uliyatli va yangi texnologiyalarni o‘rganishga qiziqadigan insonman. Frontend va Backend yo‘nalishlarini tugatganman. Web sayt, ta’lim, marketing va kreativ loyihalar bilan ishlashni yaxshi ko‘raman.</p></div>
+    <div class="meters" id="meters">
+      <div><label>Web Design <b>95%</b></label><span><i data-w="95"></i></span></div>
+      <div><label>Frontend <b>90%</b></label><span><i data-w="90"></i></span></div>
+      <div><label>Marketing <b>88%</b></label><span><i data-w="88"></i></span></div>
+      <div><label data-i18n="teach">O‘qituvchilik</label><span><i data-w="90"></i></span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="services"><div class="wrap">
+  <h2 data-i18n="h_services">Nima ish qila olaman?</h2>
+  <div class="grid3">
+    <article><h3>Web Development</h3><p>Frontend &amp; Backend</p></article>
+    <article><h3 data-i18n="teach">O‘qituvchilik</h3><p>Kompyuter, dasturlash</p></article>
+    <article><h3>Marketing</h3><p>Kontent, reklama</p></article>
+    <article><h3>Web Design</h3><p>UI/UX, responsive</p></article>
+    <article><h3>Grafik Design</h3><p>Post, taqdimot</p></article>
+    <article><h3>Kontent</h3><p>Video, matn</p></article>
+  </div>
+</div></section>
+
+<section class="sec" id="certificates"><div class="wrap">
+  <h2 data-i18n="h_certs">Sertifikatlar</h2>
+  <div class="grid4" id="certGrid"></div>
+</div></section>
+
+<section class="sec alt" id="reviews"><div class="wrap">
+  <h2 data-i18n="h_reviews">Mijozlar fikri</h2>
+  <div class="grid3">
+    <blockquote>“Muxtasar bilan ishlash juda qulay. Dizayn chiroyli va ish o‘z vaqtida tayyor bo‘ldi.”<cite>Ziyoda T. · Web loyiha</cite></blockquote>
+    <blockquote>“Tafsilotlarga e’tibor beradi va professional natija chiqaradi. Tavsiya qilaman.”<cite>Sevinch M. · Portfolio</cite></blockquote>
+    <blockquote>“Yaxshi g‘oyalar, chiroyli dizayn va tushunarli yechimlar. Juda mamnunman.”<cite>Madina A. · Marketing</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="sec contact" id="contact"><div class="wrap two">
+  <div>
+    <h2 data-i18n="h_contact">Birga chiroyli loyiha yaratamiz</h2>
+    <p class="lead" data-i18n="contact_p">Xabar qoldiring, men tez orada javob beraman.</p>
+    <p class="links"><a href="mailto:muxtasarkadirova174@gmail.com">muxtasarkadirova174@gmail.com</a><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="tel:+998946630820">+998 94 663 08 20</a></p>
+  </div>
+  <form id="form" novalidate>
+    <label><span data-i18n="f_name">Ismingiz</span><input name="name" required></label>
+    <label><span>Email</span><input name="email" type="email" required></label>
+    <label><span data-i18n="f_msg">Xabar</span><textarea name="msg" rows="4" required></textarea></label>
+    <p id="formErr" role="alert"></p>
+    <button class="btn dark" data-i18n="f_send">Xabar yuborish</button>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Muxtasar Kadirova</span><button id="toTop" class="chip">↑ Top</button></div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="card">
+    <button class="x" id="mClose" aria-label="Yopish">×</button>
+    <img id="mImg" alt=""><img id="mImg2" alt="" hidden>
+    <h3 id="mTitle"></h3><p id="mText"></p><div class="tags" id="mTags"></div>
+    <div class="pager"><button class="btn" id="mPrev">←</button><button class="btn" id="mNext">→</button></div>
+  </div>
+</div>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
